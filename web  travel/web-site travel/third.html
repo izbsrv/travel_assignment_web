@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="./third.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
+      <title>Places</title>
+   </head>
+
+   <body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="./index.html" class="logo">Tou<span>rist</span>.</a>
+          </div>
+          <div class="language">
+            <img src="./assets/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
+            <img src="./assets/lang__en.png" alt="en" data-google-lang="en" class="language__img">
+            
+        </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./second.html">Services</a></li>
+          <li><a href="./third.html">Best Places</a></li>
+          <li><a href="./fourth.html">About Nature</a></li>
+          
+        </ul>
+      </nav>
+      <div class="container">
+        <h1>Information</h1>
+         <div class="card__container">
+            <article class="card__article">
+               <img src="assets/00000161-7323-d279-ad6f-f7ff7a2a0000_square.avif" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">India,Taj-Mahal</span>
+                  <h2 class="card__title">The Taj Mahal is an ivory-white marble mausoleum. </h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/iStock-1484200613.avif" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Turkey,Cappadocia</span>
+                  <h2 class="card__title">Cappadocia is a historical region in Central Anatolia, Turkey. </h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="assets/kyoto-main.avif" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Tokyo, Kyoto</span>
+                  <h2 class="card__title">Kyoto is one of the oldest municipalities in Japan</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+            <article class="card__article">
+                <img src="assets/landscape-1.png" alt="image" class="card__img">
+ 
+                <div class="card__data">
+                   <span class="card__description">Vancouver Mountains, Canada</span>
+                   <h2 class="card__title">The North Shore Mountains are a mountain range overlooking Vancouver</h2>
+                   <a href="#" class="card__button">Read More</a>
+                </div>
+             </article>
+             <article class="card__article">
+                <img src="assets/landscape-2.png" alt="image" class="card__img">
+ 
+                <div class="card__data">
+                   <span class="card__description">Poon Hill, Nepal</span>
+                   <h2 class="card__title">Poon Hill is located 270 km west from Kathmandu</h2>
+                   <a href="#" class="card__button">Read More</a>
+                </div>
+             </article>
+             <article class="card__article">
+                <img src="assets/landscape-3.png" alt="image" class="card__img">
+ 
+                <div class="card__data">
+                   <span class="card__description">Bojcin Forest, Serbia</span>
+                   <h2 class="card__title">Path Of Peace</h2>
+                   <a href="#" class="card__button">Read More</a>
+                </div>
+             </article>
+             <article class="card__article">
+                <img src="assets/shutterstockRF_390845566.avif" alt="image" class="card__img">
+ 
+                <div class="card__data">
+                   <span class="card__description">USA, Grand Canyon</span>
+                   <h2 class="card__title">The canyon and adjacent rim are contained within Grand Canyon National Park</h2>
+                   <a href="#" class="card__button">Read More</a>
+                </div>
+             </article>
+             <article class="card__article">
+             <img src="assets/walll.jpg" alt="image" class="card__img">
+ 
+             <div class="card__data">
+                <span class="card__description">China, Big Wall</span>
+                <h2 class="card__title">The Great Wall of China is a series of fortifications that were built</h2>
+                <a href="#" class="card__button">Read More</a>
+             </div>
+          </article>
+          <article class="card__article">
+            <img src="assets/disney.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">USA, Florida</span>
+               <h2 class="card__title">Designed to supplement Disneyland in Anaheim, California,</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+         </div>
+      </div>
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo">Tou<span>rist</span>.</a>
+            </div>
+            <p>
+              Our platform is your passport to seamless adventures, offering a
+              curated selection of destinations and a user-friendly booking
+              experience.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul class="footer__links">
+              <li><a href="#">About</a></li>
+              <li><a href="./second.html">Booking</a></li>
+              <li><a href="./third.html">Places</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul class="footer__links">
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Phone number:+7(777)777-77-77</a></li>
+              <li><a href="#">Email: <br> Damir.06.06@gmail.com</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        
+      </footer>
+   </body>
+</html>

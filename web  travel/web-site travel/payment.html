@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./tailwindcss-colors.css" />
+  <link rel="stylesheet" href="./payment.css" />
+
+  <title>Payment Page</title>
+
+  
+</head>
+<body>
+
+  <section class="payment-section">
+    <div class="container">
+      <div class="payment-wrapper">
+        <div class="payment-left">
+          <div class="payment-header">
+            <div class="payment-header-icon">
+              <i class="ri-flashlight-fill"></i>
+            </div>
+            <div class="payment-header-title">Order Summary</div>
+            <p class="payment-header-description">
+                Pay for the order
+            </p>
+          </div>
+          <div class="payment-content">
+            <div class="payment-body">
+              <div class="payment-plan">
+                <div class="payment-plan-type">Pay</div>
+                <div class="payment-plan-info">
+                  <div class="payment-plan-info-name">Payment center</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-right">
+          <form action="" class="payment-form">
+            <h1 class="payment-title">Payment Details</h1>
+            <div class="payment-method">
+              <input
+                type="radio"
+                name="payment-method"
+                id="method-1"
+                checked
+              />
+              <label for="method-1" class="payment-method-item">
+                <img src="./assets/444.png" alt="" />
+              </label>
+              <input type="radio" name="payment-method" id="method-2" />
+              <label for="method-2" class="payment-method-item">
+                <img src="./assets/mastercard.png" alt="" />
+              </label>
+              <input type="radio" name="payment-method" id="method-3" />
+              <label for="method-3" class="payment-method-item">
+                <img src="./assets/Logo_of_Kaspi_bank.png" alt="" />
+              </label>
+              <input type="radio" name="payment-method" id="method-4" />
+              <label for="method-4" class="payment-method-item">
+                <img src="./assets/visa.png" alt="" />
+              </label>
+            </div>
+            <div class="payment-form-group">
+              <input
+                type="email"
+                placeholder=" "
+                class="payment-form-control"
+                id="email"
+              />
+              <label
+                for="email"
+                class="payment-form-label payment-form-label-required"
+                >Email Address</label
+              >
+            </div>
+            <div class="payment-form-group">
+              <input
+                type="text"
+                placeholder=" "
+                class="payment-form-control"
+                id="card-number"
+              />
+              <label
+                for="card-number"
+                class="payment-form-label payment-form-label-required"
+                >Card Number</label
+              >
+            </div>
+            <div class="payment-form-group-flex">
+              <div class="payment-form-group">
+                <input
+                  type="date"
+                  placeholder=" "
+                  class="payment-form-control"
+                  id="expiry-date"
+                />
+                <label
+                  for="expiry-date"
+                  class="payment-form-label payment-form-label-required"
+                  >Expiry Date</label
+                >
+              </div>
+              <div class="payment-form-group">
+                <input
+                  type="text"
+                  placeholder=" "
+                  class="payment-form-control"
+                  id="cvv"
+                />
+                <label
+                  for="cvv"
+                  class="payment-form-label payment-form-label-required"
+                  >CVV</label
+                >
+            </div>
+        </div>
+       <form action="./index.html">
+        <button type="text"  class="payment-form-submit-button">
+          <i class="ri-wallet-line"></i><a href="./index.html">BUY</a>
+           </button>
+        </form>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<div id="myModal" class="modal">
+
+<div class="modal-content">
+ 
+  <span class="close">&times;</span>
+  
+  <div id="qr-container"></div>
+ 
+  <div class="payment-form-group">
+    <input
+      type="text"
+      placeholder=""
+      class="payment-form-control"
+      id="payment-amount"
+    />
+    <label
+      for="payment-amount"
+      class="payment-form-label payment-form-label-required"
+    ></label>
+    
+  </div>
+</div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var method3 = document.getElementById("method-3");
+  var modal = document.getElementById("myModal");
+  var span = document.getElementsByClassName("close")[0];
+  var showQrButton = document.getElementById("showQrButton");
+
+  method3.addEventListener("change", function() {
+    if (this.checked) {
+      modal.style.display = "block"; 
+      var qrCode = generateQRCode();
+      var qrContainer = document.getElementById("qr-container");
+      qrContainer.innerHTML = ""; 
+      qrContainer.appendChild(qrCode);
+    }
+  });
+
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  
+  function generateQRCode() {
+    var qrText = "Amount: " + document.getElementById("payment-amount").value;
+    var qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(qrText);
+    var qrImg = document.createElement("img");
+    qrImg.src = qrUrl;
+    return qrImg;
+  }   
+});
+</script>
+</body>
+</html>

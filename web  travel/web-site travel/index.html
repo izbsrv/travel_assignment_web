@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+   
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Tou<span>rist</span>.</a>
+        </div>
+        <div class="language">
+          <img src="./assets/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
+          <img src="./assets/lang__en.png" alt="en" data-google-lang="en" class="language__img">
+          
+      </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="./second.html">Services</a></li>
+        <li><a href="./third.html">Best Places</a></li>
+        <li><a href="./fourth.html">About Nature</a></li>
+        
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="./anime-character-traveling (1).png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h3 class="section__subheader">BEST DESTINATIONS AROUND THE WORLD</h3>
+        <h1>Travel, enjoy and live a new and full life</h1>
+        <p>
+          It's an invitation to break free from the ordinary, immerse yourself
+          in diverse cultures, and embrace the beauty of the world around you.
+          Let every journey be a chapter in your story of living life to its
+          fullest potential.
+        </p>
+        <div class="header__btns">
+          <form action="./third.html">
+          <button class="btn">Find out more</button>
+        </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="service">
+      <h3 class="section__subheader">CATEGORY</h3>
+      <h2 class="section__header">We Offer Best Services</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <img src="assets/weather.png" alt="service" />
+          <h4>Calculated Weather</h4>
+          <p>
+            Stay ahead of your travels with precise weather forecasts tailored
+            to your destination's conditions.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/plane.png" alt="service" />
+          <h4>Best Flights</h4>
+          <p>
+            Unlock your exclusive access to optimal flight options curated to
+            match your preferences and budget.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/event.png" alt="service" />
+          <h4>Local Events</h4>
+          <p>
+            Immerse yourself in the pulse of your destination with insights into
+            local events and happenings within travel.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/customisation.png" alt="service" />
+          <h4>Customizations</h4>
+          <p>
+            Tailor your journey with personalized customizations, ensuring every
+            detail reflects your unique travel style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container destination__container" id="destination">
+      <h3 class="section__subheader">TOP SELLING</h3>
+      <h2 class="section__header">Top Destinations</h2>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>Rome, Italy</h4>
+              <h4>2.000.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              10 Days Trip
+            </p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>London, UK</h4>
+              <h4>2.500.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              12 Days Trip
+            </p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>Full Europe</h4>
+              <h4>1.350.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              28 Days Trip
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="destination__grid">
+          
+        <div class="destination__card">
+          <img src="./assets/Cappadocia-A.jpg" style="height: 70%;" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>Turkey, Cappadocia</h4>
+              <h4>350.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              12 Days Trip
+            </p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/175400.jpg" style="height: 70%;" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>Japan,Kyoto</h4>
+              <h4>2.120.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              23 Days Trip 
+              
+            </p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/Taj-Mahal-India-iStock-483076881.webp" style="height: 70%;" alt="destination" />
+          <div class="destination__details">
+            <div>
+              <h4>India,Taj-Mahal</h4>
+              <h4>730.000₸</h4>
+            </div>
+            <p>
+              <span><i class="ri-navigation-fill"></i></span>
+              17 Days Trip
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section__container trip__container" id="trip">
+      <div class="trip__image">
+        <img src="assets/—Pngtree—teenager traveler cartoon character vector_7256073.png" alt="trip" />
+      </div>
+      <div class="trip__content">
+        <h3 class="section__subheader">EASY & FAST</h3>
+        <h2 class="section__header">Book Your Next Trip In 3 Easy Steps</h2>
+        <ul class="trip__list">
+          <li>
+            <span><i class="ri-signpost-line"></i></span>
+            <div>
+              <h4>Choose Destination</h4>
+              <p>
+                Choose your dream destination from our curated selection of
+                exotic locales, bustling cities, and serene getaways.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-secure-payment-line"></i></span>
+            <div>
+              <h4>Make Payment</h4>
+              <p>
+                Secure your adventure with ease through our streamlined payment
+                process, ensuring a hassle-free booking experience.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-flight-takeoff-line"></i></span>
+            <div>
+              <h4>Reach Airport on Selected Date</h4>
+              <p>
+                Prepare for takeoff as you finalize your travel plans, arriving
+                at the airport on your selected date ready to embark on your
+                next unforgettable journey.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <div class="client__content">
+        <h3 class="section__subheader">TESTIMONIALS</h3>
+        <h2 class="section__header">What People Say About Us</h2>
+      </div>
+      <div class="client__swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/83879044_w640_h640_kajrat-nurtas.webp" alt="client" />
+                <div class="client__card__content">
+                  <p>
+                    Банк карточкасымен толеуге бола ма? а?
+                    ㅤ
+                    ㅤ
+                    ㅤ
+                    ㅤ
+
+                  </p>
+                  <h4>Kairat Nurtas</h4>
+                  <h5>singer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/photo_5415865847026671050_y.jpg" alt="client" />
+                <div class="client__card__content">
+                  <p>
+                    Макеба,Макеба уууу
+                  </p>
+                  <h4>fake Kuandyk Rahym</h4>
+                  <h5>Tik-Tok</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/6499142d79d18_1687753773.png" alt="client" />
+                <div class="client__card__content">
+                  <p>
+                    Черная Дырага билет бар ма? братишка?
+                  </p>
+                  <h4>Xan-ATA.98</h4>
+                  <h5>fighter</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Tou<span>rist</span>.</a>
+          </div>
+          <p>
+            Our platform is your passport to seamless adventures, offering a
+            curated selection of destinations and a user-friendly booking
+            experience.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About</a></li>
+            <li><a href="./second.html">Booking</a></li>
+            <li><a href="./third.html">Places</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Phone number:+7(777)777-77-77</a></li>
+            <li><a href="">Email: <br> Damir.06.06@gmail.com</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  </body>
+</html>

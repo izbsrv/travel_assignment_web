@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <!--Google Fonts and Icons-->
+    <link rel="stylesheet" href="./second.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./google-translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+</head>
+<body>
+    <nav>
+        
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="./index.html" class="logo">Tou<span>rist</span>.</a>
+          </div>
+          <div class="language">
+            <img src="./assets/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
+            <img src="./assets/lang__en.png" alt="en" data-google-lang="en" class="language__img">
+            
+        </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./second.html">Services</a></li>
+          <li><a href="./third.html">Best Places</a></li>
+          <li><a href="./fourth.html">About Nature</a></li>
+          
+        </ul>
+      </nav>
+     <div class="center">
+        <div class="tickets">
+            <div class="ticket-selector">
+                <div class="head">
+                    <div class="title"><h1>Ticket</h1></div>
+                </div>
+                <div class="days">
+                    <h1>Month </h1>
+                <div class="dayss">
+                    <input type="radio" name="days" id="d55" class="qw">
+                    <label for="d55" class="dates-itemm">
+                        <div class="day">January</div>
+                        
+                    </label>
+                    <input type="radio" name="days" id="d56" class="qw">
+                    <label for="d56" class="dates-itemm">
+                        <div class="day">February</div>
+                        
+                    </label>
+                    <input type="radio" name="days" id="d57" class="qw">
+                    <label for="d57" class="dates-itemm">
+                        <div class="day">March</div>
+                        
+                    </label>
+                    <input type="radio" name="days" id="d57" class="qw">
+                    <label for="d57" class="dates-itemm">
+                        <div class="day">April</div>
+                        
+                    </label>
+                    <input type="radio" name="days" id="d58" class="qw">
+                    <label for="d58" class="dates-itemm">
+                        <div class="day">May</div>
+                        
+                    </label>
+                    <input type="radio" name="days" id="d59" class="qw">
+                    <label for="d59" class="dates-itemm">
+                        <div class="day">June</div>
+                        
+                    </label>
+                   
+                    </div>
+                    <div class="dayss">
+                        <input type="radio" name="days" id="60" class="qw">
+                        <label for="d60" class="dates-itemm">
+                            <div class="day">July</div>
+                            
+                        </label>
+                        <input type="radio" name="days" id="61" class="qw">
+                        <label for="d61" class="dates-itemm">
+                            <div class="day">August</div>
+                            
+                        </label>
+                        <input type="radio" name="days" id="d62" class="qw">
+                        <label for="d62" class="dates-itemm">
+                            <div class="day">September</div>
+                            
+                        </label>
+                        <input type="radio" name="days" id="d63" class="qw">
+                        <label for="d63" class="dates-itemm">
+                            <div class="day">October</div>
+                            
+                        </label>
+                        <input type="radio" name="days" id="d64" class="qw">
+                        <label for="d64" class="dates-itemm">
+                            <div class="day">November</div>
+                            
+                        </label>
+                        <input type="radio" name="days" id="d65" class="qw">
+                        <label for="d65" class="dates-itemm">
+                            <div class="day">December</div>
+                            
+                        </label>
+                       
+                        </div>
+                </div>
+
+                <div class="timings">
+                    <h1>Days </h1>
+                    <div class="dates">
+                        <input type="radio" name="date" id="d1" class="qw">
+                        <label for="d1" class="dates-item">
+                            <div class="day">Mon</div>
+                            <div class="date">1</div>
+                        </label>
+                        <input type="radio" name="date" id="d10" class="qw">
+                        <label for="d10" class="dates-item">
+                            <div class="day">Tue</div>
+                            <div class="date">2</div>
+                        </label>
+                        <input type="radio" name="date" id="d34" class="qw">
+                        <label for="d34" class="dates-item">
+                            <div class="day">Wed</div>
+                            <div class="date">3</div>
+                        </label>
+                        <input type="radio" id="d2" name="date" class="qw">
+                        <label class="dates-item" for="d2">
+                            <div class="day">Thu</div>
+                            <div class="date">4</div>
+                        </label>
+                        <input type="radio" id="d3" name="date" class="qw">
+                        <label class="dates-item" for="d3">
+                            <div class="day">Fri</div>
+                            <div class="date">5</div>
+                        </label>
+                        <input type="radio" id="d4" name="date" class="qw">
+                        <label class="dates-item" for="d4">
+                            <div class="day">Sat</div>
+                            <div class="date">6</div>
+                        </label>
+                        <input type="radio" id="d5" name="date" class="qw">
+                        <label class="dates-item" for="d5">
+                            <div class="day">Sun</div>
+                            <div class="date">7</div>
+                        </label>
+                    </div>
+                    <div class="dates">
+                        <input type="radio" id="d16" name="date" class="qw">
+                        <label class="dates-item" for="d16">
+                            <div class="day">Mon</div>
+                            <div class="date">8</div>
+                        </label>
+                        <input type="radio" id="d7" name="date" class="qw">
+                        <label class="dates-item" for="d7">
+                            <div class="day">Tue</div>
+                            <div class="date">9</div>
+                        </label>
+                        <input type="radio" id="d6" name="date" class="qw">
+                        <label class="dates-item" for="d6">
+                            <div class="day">Wed</div>
+                            <div class="date">10</div>
+                        </label>
+                        <input type="radio" id="d35" name="date" class="qw">
+                        <label class="dates-item" for="d35">
+                            <div class="day">Thu</div>
+                            <div class="date">11</div>
+                        </label>
+                        <input type="radio" id="d36" name="date" class="qw">
+                        <label class="dates-item" for="d36">
+                            <div class="day">Fri</div>
+                            <div class="date">12</div>
+                        </label>
+                        <input type="radio" id="d37" name="date" class="qw">
+                        <label class="dates-item" for="d37">
+                            <div class="day">Sat</div>
+                            <div class="date">13</div>
+                        </label>
+                        <input type="radio" id="d38" name="date" class="qw">
+                        <label class="dates-item" for="d38">
+                            <div class="day">Sun</div>
+                            <div class="date">14</div>
+                        </label>
+                    </div>
+                    <div class="dates">
+                        <input type="radio" id="d40" name="date" class="qw">
+                        <label class="dates-item" for="d40">
+                            <div class="day">Mon</div>
+                            <div class="date">15</div>
+                        </label>
+                        <input type="radio" id="d41" name="date" class="qw">
+                        <label class="dates-item" for="d41">
+                            <div class="day">Tue</div>
+                            <div class="date">16</div>
+                        </label>
+                        <input type="radio" id="d42" name="date" class="qw">
+                        <label class="dates-item" for="d42">
+                            <div class="day">Wed</div>
+                            <div class="date">17</div>
+                        </label>
+                        <input type="radio" id="d43" name="date" class="qw">
+                        <label class="dates-item" for="d43">
+                            <div class="day">Thu</div>
+                            <div class="date">18</div>
+                        </label>
+                        <input type="radio" id="d44" name="date" class="qw">
+                        <label class="dates-item" for="d44">
+                            <div class="day">Fri</div>
+                            <div class="date">19</div>
+                        </label>
+                        <input type="radio" id="d45" name="date" class="qw">
+                        <label class="dates-item" for="d45">
+                            <div class="day">Sat</div>
+                            <div class="date">20</div>
+                        </label>
+                        <input type="radio" id="d46" name="date" class="qw"> 
+                        <label class="dates-item" for="d46">
+                            <div class="day">Sun</div>
+                            <div class="date">21</div>
+                        </label>
+                    </div>
+                    <p><b>Time</b></p>
+                    <div class="times">
+                        <input type="radio" name="time" id="t1" class="qw">
+                        <label for="t1" class="time">11:00</label>
+                        <input type="radio" id="t2" name="time" class="qw">
+                        <label for="t2" class="time">14:30</label>
+                        <input type="radio" id="t3" name="time" class="qw">
+                        <label for="t3" class="time">18:00</label>
+                        <input type="radio" id="t4" name="time" class="qw">
+                        <label for="t4" class="time">21:30</label>
+                    </div>
+                </div>
+            </div>
+            <div class="passenger-count">
+                <label for="passengers">Number of Passengers: </label>
+                <select id="passengers" name="passengers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="price">
+                <div class="total">
+                    
+                    <div class="amount">0</div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="form-title">Registration</h1>
+            <form id="booking-form">
+              <div class="main-user-info">
+                <div class="user-input-box">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" 
+                          id="fullName"
+                          name="fullName"
+                          placeholder="Enter Full Name"/>
+                </div>
+                
+                <div class="user-input-box">
+                  <label for="email">Email</label>
+                  <input type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Enter Email"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" 
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          placeholder="Enter Phone Number"/>
+                </div>
+                <div class="user-input-box">
+                  <label for="City">City</label>
+                  <input type="City" 
+                          id="City"
+                          name="City"
+                          placeholder="Enter City"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="Age">Age</label>
+                    <input type="number" 
+                            id="Age"
+                            name="Age"
+                            placeholder="Enter Age"/>
+                  </div>
+                  <div class="user-input-box">
+                    <label for="Destination">Destination</label>
+                    <input type="Destination" 
+                            id="Destination"
+                            name="Destination"
+                            placeholder="Enter Destination"/>
+                  </div>
+                
+              </div>
+              <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                  <input type="radio" name="gender" id="male">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="other">
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              <div class="form-submit-btn">
+                <input type="submit" value="Book">
+              </div>
+            </form>
+          </div>
+    </div>
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <p>Successfully booked <br>
+                Thanks you!
+            </p>
+            <button id="custom-alert-button">OK</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo">Tou<span>rist</span>.</a>
+            </div>
+            <p>
+              Our platform is your passport to seamless adventures, offering a
+              curated selection of destinations and a user-friendly booking
+              experience.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul class="footer__links">
+              <li><a href="#">About</a></li>
+              <li><a href="./second.html">Booking</a></li>
+              <li><a href="./third.html">Places</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul class="footer__links">
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Phone number:+7(777)777-77-77</a></li>
+              <li><a href="#">Email: <br> Damir.06.06@gmail.com</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        
+      </footer>
+    
+    
+    <script>
+        let days = document.querySelectorAll(".days input");
+        let dates = document.querySelectorAll(".dates input");
+        let times = document.querySelectorAll(".times input");
+        let passengers = document.getElementById("passengers");
+    
+        dates.forEach((ticket) => {
+            ticket.addEventListener("change", updateTicketCount);
+        });
+    
+        passengers.addEventListener("change", updateTicketCount);
+    
+        function updateTicketCount() {
+            let amount = 0;
+            let count = 0;
+    
+            dates.forEach((ticket) => {
+                if (ticket.checked) {
+                    count++;
+                }
+            });
+    
+            let numPassengers = parseInt(passengers.value) || 1;
+            amount = count * 20000 * numPassengers;
+    
+            document.querySelector(".amount").innerHTML = amount;
+            document.querySelector(".count").innerHTML = count;
+        }
+    
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            showCustomAlert();
+        });
+    
+        function showCustomAlert() {
+            let customAlert = document.getElementById("custom-alert");
+            let customAlertButton = document.getElementById("custom-alert-button");
+    
+            customAlert.style.display = "block";
+    
+            customAlertButton.addEventListener("click", function() {
+                customAlert.style.display = "none";
+                window.location.href = "payment.html"; 
+            });
+        }
+    </script>
+    
+</body>
+</html>
